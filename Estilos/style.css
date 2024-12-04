@@ -133,11 +133,13 @@ span{
 
 @media (max-width: 1200px){
     .cabecalho{
+        display: flex;
         padding: 10%;
     }
 
     .cabecalho__menu{
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .classe-main{
