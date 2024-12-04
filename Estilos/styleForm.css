@@ -1,0 +1,40 @@
+/* Estilos para o formulário */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.formulario__input, .formulario__textarea {
+    width: 100%;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria); 
+    font-family: var(--fonte-secundaria);
+    font-size: 1.125rem;
+}
+
+.formulario__input:focus, .formulario__textarea:focus {
+    outline: none;
+    border-color: var(--cor-hover);
+    background-color: #1a1a1a; 
+}
+
+.formulario__botao {
+    background-color: var(--cor-terciaria);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario__botao:hover {
+    background-color: var(--cor-hover);
+}

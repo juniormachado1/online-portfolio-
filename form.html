@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/styleForm.css">
+    <link rel="shortcut icon" href="Imagens/icone.ico" type="image/x-icon">
+    <script src="Scripts/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__botao" href="index.html">Home</a>
+            <a class="cabecalho__menu__botao" href="about.html">O Projeto</a>
+            <a class="cabecalho__menu__botao" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__botao" href="form.html">Formulário</a>
+        </nav>
+    </header>
+    <main class="classe-main">
+        <section class="main__conteudo">
+            <form action="formAction.html" method="GET" onsubmit="return validarFormulario()" class="formulario">
+                <label for="nome" class="main__links__subtitulo">Nome:</label>
+                <input type="text" id="nome" name="nome" class="formulario__input" required>
+
+                <label for="email" class="main__links__subtitulo">Email:</label>
+                <input type="email" id="email" name="email" class="formulario__input" required>
+
+                <label for="mensagem" class="main__links__subtitulo">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" class="formulario__textarea" rows="4" required></textarea>
+
+                <button type="submit" class="formulario__botao">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Junior Machado</p>
+    </footer>
+</body>
+</html>
